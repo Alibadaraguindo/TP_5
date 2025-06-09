@@ -1,4 +1,7 @@
 package org.example.tp5.repository;
 
-public interface ProductRepository {
+import org.example.tp5.entities.Product;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProductRepository extends JpaRepository<Product, Long> {
 }
